@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Dimon';
+  pageName = 'recipes';
+
+  navigate(event: string){
+    this.pageName = event;
+  }
 }

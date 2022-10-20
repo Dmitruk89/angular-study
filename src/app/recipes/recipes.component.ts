@@ -19,4 +19,8 @@ export class RecipesComponent implements OnInit {
     )
   }
 
+  // ngOnDestroy(): void {
+  //   this.recipeService.recipeSelected.unsubscribe();
+  // }
+
 }

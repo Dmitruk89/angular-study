@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipeService } from '../services/recipe.service';
 import { Recipe } from './recipe.model';
 
 @Component({
@@ -9,18 +8,8 @@ import { Recipe } from './recipe.model';
 })
 export class RecipesComponent implements OnInit {
   recipeDetail!: Recipe;
-  constructor(private recipeService: RecipeService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.recipeService.recipeSelected.subscribe(
-      (recipe: Recipe) => {
-        this.recipeDetail = recipe;
-      }
-    )
-  }
-
-  // ngOnDestroy(): void {
-  //   this.recipeService.recipeSelected.unsubscribe();
-  // }
+  ngOnInit(): void {}
 
 }

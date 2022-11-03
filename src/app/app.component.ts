@@ -8,10 +8,4 @@ import { RecipeService } from './services/recipe.service';
   providers: [RecipeService]
 })
 export class AppComponent {
-  name = 'Dimon';
-  pageName = 'recipes';
-
-  navigate(event: string){
-    this.pageName = event;
-  }
 }
